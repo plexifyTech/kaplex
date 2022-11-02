@@ -1,2 +1,3 @@
 # kaplex
-Kafka related services and configurations
+
+Wrapper around the segmentio kafka-go library to simplify usage
