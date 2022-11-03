@@ -1,7 +1,7 @@
 package kaplex
 
 var (
-	config KafkaConfig
+	config *KafkaConfig
 )
 
 type KafkaConfig struct {
@@ -9,6 +9,6 @@ type KafkaConfig struct {
 	ConsumerGroup string `yaml:"consumerGroup" env:"KAFKA_CONSUMER_GROUP"`
 }
 
-func Init(c KafkaConfig) {
+func Init(c *KafkaConfig) {
 	config = c
 }
